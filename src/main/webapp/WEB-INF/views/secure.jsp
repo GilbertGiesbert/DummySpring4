@@ -10,11 +10,11 @@
 
 <form action="oauth/token" method="post">
     grant type:<br>
-    <input type="text" name="grant_type"><br>
+    <input type="text" name="grant_type" value="password"><br>
     user:<br>
-    <input type="text" name="username"><br>
+    <input type="text" name="username" value="bill"><br>
     pswd:<br>
-    <input type="text" name="password">
+    <input type="text" name="password" value="abc123">
     <input type="submit" value="Submit">
 </form>
 
