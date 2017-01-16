@@ -4,10 +4,19 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>HelloWorld page</title>
+    <title>Secure</title>
 </head>
 <body>
-Greeting : ${greeting}
-<a href="secure">secure</a>
+
+<form action="oauth/token" method="post">
+    grant type:<br>
+    <input type="text" name="grant_type"><br>
+    user:<br>
+    <input type="text" name="username"><br>
+    pswd:<br>
+    <input type="text" name="password">
+    <input type="submit" value="Submit">
+</form>
+
 </body>
 </html>

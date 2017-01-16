@@ -24,4 +24,10 @@ public class HelloWorldController {
         return "welcome";
     }
 
+    @RequestMapping(value = "/secure", method = RequestMethod.GET)
+    public String mapSecure(ModelMap model) {
+        model.addAttribute("greeting", "Hello World Again, from Spring 4 MVC");
+        return "secure";
+    }
+
 }
